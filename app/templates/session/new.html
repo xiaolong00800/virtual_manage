@@ -1,0 +1,26 @@
+<!doctype html>
+<html>
+
+  <head>
+    <title>Sign in</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
+    <link rel="stylesheet" href="{{$smarty.const._CSS_URL}}bootstrap.css">
+    <link rel="stylesheet" href="{{$smarty.const._CSS_URL}}bootstrap-responsive.css">
+    <link rel="stylesheet" href="{{$smarty.const._CSS_URL}}session.css">
+    <script src="{{$smarty.const._JS_URL}}jquery.min.js"></script>
+    <script src="{{$smarty.const._JS_URL}}bootstrap.min.js"></script>
+  </head>
+
+  <body>
+    <div class="container">
+      <form action="/session/create" class="form-signin" method="post" name="session">
+        <h2 class="form-signin-heading">业务评估管理平台</h2>
+        <input autofocus="" class="input-block-level" name="email" placeholder="Email address" type="text">
+        <input class="input-block-level" name="password" placeholder="Password" type="password">
+        <button class="btn btn-large btn-primary btn-block" type="submit">Sign in</button>
+      </form>
+    </div>
+  </body>
+
+</html>

@@ -1,0 +1,97 @@
+<!doctype html>
+<html>
+
+  <head>
+    <title>User</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta content="text/html; charset=UTF-8" http-equiv="Content-Type">
+    <link rel="stylesheet" href="{{$smarty.const._CSS_URL}}bootstrap.css">
+    <link rel="stylesheet" href="{{$smarty.const._CSS_URL}}bootstrap-responsive.css">
+    <link rel="stylesheet" href="{{$smarty.const._CSS_URL}}session.css">
+    <script src="{{$smarty.const._JS_URL}}jquery.min.js"></script>
+    <script src="{{$smarty.const._JS_URL}}bootstrap.min.js"></script>
+  </head>
+
+  <body>
+    <div class="navbar navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container">
+          <a class="brand" href="#">业务评估管理平台</a>
+          <div class="navbar-content">
+            <ul class="nav">
+              <li class="active">
+                <a href="#">首页</a> 
+              </li>
+              <li>
+                <a href="#">管理平台</a> 
+              </li>
+            </ul>
+            <ul class="nav pull-right">
+              <li>
+                <h5 style="color: #ffffff; margin-top: 15px; margin-right: 15px;">
+                  <a href="/user/edit" style="color: #ffffff;">{{$user['name']}}</a>
+                  &nbsp;&nbsp;&nbsp;|
+                </h5>
+              </li> 
+              <li><a href="/session/destroy">退出</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <br>
+      <div class="container well">
+        <div class="span6 offset2">
+          <h4>您是{{$user['role']}}</h4>
+          <legend></legend>
+          <div class="span form-horizontal">
+            <div class="control-group">
+              <label class="control-label">邮&nbsp;&nbsp;箱：</label>
+              <div class="controls">
+                <input type="text" value="{{$user['email']}}" readonly>
+                <i class="icon-pencil"></i>
+              </div>
+            </div>
+            <div class="control-group">
+              <label class="control-label">姓&nbsp;&nbsp;名：</label>
+              <div class="controls">
+                <input type="text" value="{{$user['name']}}" readonly>
+                <i class="icon-pencil"></i>
+              </div>
+            </div>
+            <div class="control-group">
+              <label class="control-label">电&nbsp;&nbsp;话：</label>
+              <div class="controls">
+                <input type="text" value="{{$user['mobilePhone']}}" readonly>
+                <i class="icon-pencil"></i>
+              </div>
+            </div>
+          </div>        
+        </div>
+      </div>
+      <div class="container well">
+        <div class="span6 offset2">
+          <div class="span form-horizontal">
+            <div class="control-group">
+              <label class="control-label">审批中的资源请求：</label>
+              <div class="controls">
+                <a href="">4</a> 
+              </div>
+            </div>
+            <div class="control-group">
+              <label class="control-label">等待确认的资源请求：</label>
+              <div class="controls">
+                <a href="">4</a> 
+              </div>
+            </div>
+            <div class="control-group">
+              <label class="control-label">
+                <a href=""></a> 
+              </label>
+            </div>
+          </div>        
+        </div>
+      </div>
+    </div>
+  </body>
+
+</html>
